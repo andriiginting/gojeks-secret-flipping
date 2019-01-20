@@ -4,10 +4,7 @@ import android.animation.AnimatorInflater
 import android.animation.AnimatorSet
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu
-import android.view.MenuItem
+import android.support.v7.app.AppCompatActivity
 
 import kotlinx.android.synthetic.main.activity_main.*
 
