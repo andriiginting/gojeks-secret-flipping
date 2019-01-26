@@ -5,7 +5,6 @@
 
     <solid
             android:color="@color/go_point_color_yellow"/>
-
     <size
             android:width="70dp"
             android:height="70dp"/>

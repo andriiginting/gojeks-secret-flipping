@@ -9,15 +9,20 @@
         tools:showIn="@layout/activity_main"
         tools:context=".MainActivity">
 
-
     <ImageView
             android:id="@+id/coins"
             android:layout_width="250dp"
             android:layout_height="250dp"
-            android:src="@drawable/coin" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            android:src="@drawable/coins_item"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
@@ -31,8 +36,11 @@
             android:textStyle="bold"
             android:layout_gravity="center"
             android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="76dp"
             app:layout_constraintTop_toTopOf="@+id/coins"/>
 
@@ -51,5 +59,55 @@
             android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/random_point"/>
+            app:layout_constraintTop_toBottomOf="@+id/random_point"
+            android:id="@+id/textView"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_size_10" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp">
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/go_point_color_yellow"/>
+        <TextView
+                android:id="@+id/text_go_points_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/go_points_text_holder"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="@dimen/margin_size_10"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_size_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp">
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/colorPrimaryDark"/>
+        <TextView
+                android:id="@+id/text_go_points_payoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gojek_transaction"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="@dimen/margin_size_10"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
