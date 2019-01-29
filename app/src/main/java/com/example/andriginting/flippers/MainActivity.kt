@@ -5,8 +5,10 @@ import android.animation.AnimatorSet
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.ImageView
+import android.view.GestureDetector
+import android.view.View
 import android.widget.TextView
+import come.example.andriiginting.gesture.GestureListener
 
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -15,8 +17,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var animRightOut: AnimatorSet
     private lateinit var animLeftIn: AnimatorSet
 
-    private lateinit var frontCoins: ImageView
+    private lateinit var frontCoins: View
     private lateinit var randomPoint: TextView
+
+    private lateinit var gestureDetector: GestureDetector
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,12 +28,12 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
+        gestureDetector = GestureDetector(baseContext, GestureListener())
+
         frontCoins = findViewById(R.id.coins)
         randomPoint = findViewById(R.id.random_point)
-
         loadAnimations()
         changeViewState()
-
     }
 
     private fun changeViewState() {

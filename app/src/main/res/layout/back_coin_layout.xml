@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
-            android:id="@+id/coins"
+            android:id="@+id/back_coins"
             android:layout_width="250dp"
             android:layout_height="250dp"
             android:src="@drawable/coin"/>
 
     <TextView
-            android:id="@+id/random_point"
+            android:id="@+id/back_random_point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="21"
-            android:text="21"
+            tools:text="22"
+            android:text="31"
             android:textColor="@android:color/white"
             android:textSize="40sp"
             android:textStyle="bold"
