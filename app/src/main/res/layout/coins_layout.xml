@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
+    <FrameLayout
+            android:id="@+id/front_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <include layout="@layout/front_coin_layout"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/back_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+        <include layout="@layout/back_coin_layout"/>
+    </FrameLayout>
 </FrameLayout>
