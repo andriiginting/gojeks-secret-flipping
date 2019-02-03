@@ -8,14 +8,14 @@
             android:id="@+id/back_coins"
             android:layout_width="250dp"
             android:layout_height="250dp"
-            android:src="@drawable/coin"/>
+            android:src="@drawable/coins_item"/>
 
     <TextView
             android:id="@+id/back_random_point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="22"
-            android:text="31"
+            android:text="Geser"
             android:textColor="@android:color/white"
             android:textSize="40sp"
             android:textStyle="bold"

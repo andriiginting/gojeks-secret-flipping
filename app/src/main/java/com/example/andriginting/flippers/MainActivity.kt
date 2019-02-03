@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.GestureDetector
 import android.view.View
-import android.widget.TextView
 import come.example.andriiginting.gesture.GestureListener
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var animLeftIn: AnimatorSet
 
     private lateinit var frontCoins: View
-    private lateinit var randomPoint: TextView
+    private lateinit var backCoins: View
 
     private lateinit var gestureDetector: GestureDetector
 
@@ -30,8 +29,9 @@ class MainActivity : AppCompatActivity() {
 
         gestureDetector = GestureDetector(baseContext, GestureListener())
 
-        frontCoins = findViewById(R.id.coins)
-        randomPoint = findViewById(R.id.random_point)
+        frontCoins = findViewById(R.id.front_layout)
+        backCoins = findViewById(R.id.back_layout)
+
         loadAnimations()
         changeViewState()
     }
@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
         val spinnerTimes = 8000
         val viewScale = resources.displayMetrics.density.times(spinnerTimes)
         frontCoins.cameraDistance = viewScale
+        backCoins.cameraDistance = viewScale
     }
 
     @SuppressLint("ResourceType")
