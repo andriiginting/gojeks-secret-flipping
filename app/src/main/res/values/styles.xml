@@ -13,6 +13,7 @@
     </style>
 
     <style name="go_points" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/neo_sans_pro_bold</item>
         <item name="colorPrimary">@android:color/white</item>
         <item name="colorPrimaryDark">@android:color/darker_gray</item>
     </style>
