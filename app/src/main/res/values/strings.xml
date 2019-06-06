@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">flippers</string>
+    <string name="app_name">Go-Points</string>
     <string name="action_settings">Settings</string>
     <string name="points">Points</string>
     <string name="go_points_text_holder">Ada 3 token yang bisa dimainkan</string>

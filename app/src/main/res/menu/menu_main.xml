@@ -2,9 +2,9 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="com.example.andriginting.flippers.MainActivity">
-    <item android:id="@+id/action_settings"
+    <item android:id="@+id/menu_points_available"
           android:title="@string/points"
           android:orderInCategory="100"
-          android:icon="@drawable/trophy"
+          android:icon="@drawable/yellow_trophy"
           app:showAsAction="always"/>
 </menu>

@@ -7,7 +7,7 @@ import android.view.MotionEvent
 /**
  * Created by andriiginting on 20/01/19.
  */
-class GestureListener: GestureDetector.OnGestureListener {
+class GestureListener : GestureDetector.OnGestureListener {
 
     override fun onShowPress(e: MotionEvent?) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
@@ -38,16 +38,15 @@ class GestureListener: GestureDetector.OnGestureListener {
     override fun onFling(e1: MotionEvent?, e2: MotionEvent?, velocityX: Float, velocityY: Float): Boolean {
         if (e1?.x!! - e2!!.x > 50) {
             //swipe left
-            Log.d("swipe-gestures","on swipe to the left")
+            Log.d("swipe-gestures", "on swipe to the left")
             return true
         }
 
         if (e2.x - e1.x > 50) {
             //swipe right
-            Log.d("swipe-gestures","on swipe to the right")
+            Log.d("swipe-gestures", "on swipe to the right")
             return true
         }
         return true
     }
-
 }
